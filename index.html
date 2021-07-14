@@ -178,13 +178,51 @@
 
         <section class="copa-final">
             <div class="copa-final-description">
-                <h1 class="section-title">Highlights <br> Argentina 1 - 0 Brazil</h1>
+                <h1 class="section-title">Final <br> Argentina 1 - 0 Brazil</h1>
                 <h3>(COPA AMÉRICA 2021)</h3>
                 <p class="copa-info">The 2021 Copa América was the 47th edition of the Copa América, the international men's football championship organised by South America's football ruling body CONMEBOL. The tournament took place in Brazil from 13 June to 10 July 2021</p>
             </div>
             <div class="copa-final-video">
                 <iframe width="620" height="350" src="https://www.youtube.com/embed/6tLxv5EsszA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
+        </section>
+
+
+
+
+
+
+        <!-----------------------
+        --------- Survey --------
+        -------------------------->
+        <section class="survey-form">
+            <div id="form-title">
+                <h2>Tell Us About Your Favorite Team</h2>
+            </div>
+            <form id="form-info">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="firstname" placeholder="type your name.." required>
+
+                <label for="fteam">Your Favorite Team:</label>
+                <select name="fteam" id="fteam" required>
+                    <option value="">None</option>
+                    <option value="1">Argentina</option>
+                    <option value="2">Bolivia</option>
+                    <option value="3">Brazil</option>
+                    <option value="4">Chile</option>
+                    <option value="5">Colombia</option>
+                    <option value="6">Ecuador</option>
+                    <option value="7">Paraguay</option>
+                    <option value="8">Peru</option>
+                    <option value="9">Uruguay</option>
+                    <option value="10">Venezuela</option>
+                </select>
+                
+                <label for="description">Write about your favorite team:</label>
+                <textarea name="description" id="description" cols="30" rows="10" placeholder="Write something...." required></textarea>
+    
+                <input type="submit" value="Submit">
+            </form>
         </section>
 
     </main>

@@ -180,6 +180,77 @@ body{
 
 
 
+
+
+
+
+/* ----------------------------------
+-------------  Form  ----------
+------------------------------------- */
+
+.survey-form{
+    border-radius: 15px;
+    background-color: #1100ffc2;
+    padding: 20px;
+    width: 40%;
+    margin: auto;
+    margin-top: 10%;
+  }
+
+  #form-title{
+    text-align: center;
+    font-size: 130%;
+    margin-top: 5%;
+    color: white;
+}
+
+.survey-form input, select, textarea{
+    display: block;
+}
+.survey-form label{
+    margin-left: 20px;
+    margin-top: 50px;
+    color: white;
+}
+.survey-form #name, select, textarea{
+    width: 95%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    margin: auto;
+}
+
+input[type=submit] {
+    background-color: #E02C6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+background-color: white;
+color: black;
+}
+
+.survey-form input[type=submit]{
+/* margin-top: 20px;
+margin-left: 20px; */ 
+margin: auto;
+margin-top: 20px;
+}
+
+
+
+
+
+
+
+
 /* ----------------------------------
 -------------  Footer  --------------
 ------------------------------------- */
@@ -297,12 +368,12 @@ footer{
 
 
 
-    
+
 
     /* copa final */
     .copa-final{
         grid-template-columns: repeat(1, 1fr);
-        margin-top: 150px;
+        margin-top: 80px;
     }
     
     .copa-final-description{
@@ -332,6 +403,18 @@ footer{
 
 
 
+    /* Form */
+
+    .survey-form{
+
+        width: 85%;
+        margin-top: 25%;
+      }
+    
+      #form-title{
+        font-size: 90%;
+    }
+ 
 
      /* Footer */
      footer{
