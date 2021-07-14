@@ -1,0 +1,131 @@
+/* Google Font, Poppins, weight 700 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap');
+
+/* Overall Style */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+
+
+/* ------------------------------
+--------  First Section  --------
+--------------------------------- */
+
+.first-section{
+    background-color: #2D25A0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.top-info{
+    width: 485px;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
+.first-section .section-title{
+    font-size: 64px;
+    color: white;
+}
+
+.pink-button{
+    background-color: #E02C6D;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.top-banner{
+    margin-top: 6%;
+    margin-left: 20%;
+    margin-bottom: 10%;
+}
+
+.first-section .top-banner img{
+    width: 556px;
+}
+
+
+
+
+
+/* ----------------------------------
+---------  Players Gallery  ---------
+------------------------------------- */
+
+.players-gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 330px);
+    column-gap: 30px;
+    row-gap: 27px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.player{
+    width: 330px;
+    box-shadow: 0 0 10px gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-thumbnail img{
+    width: 300px;
+    justify-content: center;
+    padding: 15px;
+    padding-bottom: 16px;
+}
+
+.player-name{
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.player-info{
+    font-size: 16px;
+    width: 290px;
+    margin-top: 10px;
+    margin-bottom: 33px;
+}
+
+
+
+
+
+
+/* ----------------------------------
+-----------  Media Query  -----------
+------------------------------------- */
+
+/* @media only screen and (max-width:688px) {
+    .first-section{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .top-info{
+        width: 90%;
+        margin: 15px;
+    }
+    .first-section .section-title{
+        font-size: 36px;
+        color: white;
+    }
+    .pink-button{
+        background-color: #E02C6D;
+        padding: 10px;
+        text-decoration: none;
+        color: white;
+        font-size: 10px;
+        font-weight: 500;
+    }
+    .first-section .top-banner img{
+        width: 300px;
+    }
+} */
