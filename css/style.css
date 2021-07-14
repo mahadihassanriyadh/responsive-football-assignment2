@@ -63,14 +63,14 @@ body{
     column-gap: 30px;
     row-gap: 27px;
     width: 100%;
-    align-items: center;
     justify-content: center;
     margin-top: 70px;
 }
 
 .player{
     width: 330px;
-    box-shadow: 0 0 10px gray;
+    height: 540px;
+    box-shadow: 0 0 10px rgb(200, 200, 200);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,30 +102,170 @@ body{
 
 
 /* ----------------------------------
+-----  Copa America Highlights  -----
+------------------------------------- */
+
+.copa-highlights{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    margin: auto;
+    margin-top: 165px;
+}
+
+.copa-highlights-info{
+    margin-left: 18%;
+}
+
+.copa-highlights .section-title{
+    font-size: 48px;
+    margin-bottom: 0;
+}
+
+.copa-highlights .copa-highlights-info .info{
+    font-size: 16px;
+    margin-bottom: 34px;
+    width: 404px;
+}
+
+.copa-highlights-banner img{
+    width: 567px;
+    height: 427px;
+}
+
+
+
+
+
+
+
+/* ----------------------------------
+-------------  Footer  --------------
+------------------------------------- */
+
+footer{
+    margin-top: 158px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foot-logo img{
+    width: 480px;
+}
+
+.foot-icons{
+    font-size: 32px;
+}
+
+.copyright{
+    font-size: 18px;
+}
+
+
+
+
+
+
+/* ----------------------------------
 -----------  Media Query  -----------
 ------------------------------------- */
 
-/* @media only screen and (max-width:688px) {
+@media only screen and (max-width:688px) {
+    
+    /* First Section */
     .first-section{
         grid-template-columns: repeat(1, 1fr);
     }
+
     .top-info{
-        width: 90%;
-        margin: 15px;
+        width: auto;
+        margin-left: 7%;
+        margin-top: 2%;
     }
+
     .first-section .section-title{
         font-size: 36px;
-        color: white;
+        color: rgb(255, 255, 255);
+        width: 250px;
     }
-    .pink-button{
-        background-color: #E02C6D;
-        padding: 10px;
-        text-decoration: none;
-        color: white;
-        font-size: 10px;
-        font-weight: 500;
-    }
+
     .first-section .top-banner img{
         width: 300px;
     }
-} */
+
+    .first-section .top-banner img{
+        width: 260px;
+        margin-top: 5%;
+    }
+
+
+
+
+
+    /* Player Gallery */
+
+    .players-gallery{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 47px;
+    }
+
+    .player{
+        width: 330px;
+        height: 540px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+    
+
+    /* 3rd Section - Copa Highlights */
+
+    .copa-highlights{
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+        margin-top: 60px;
+    }
+    .copa-highlights-info{
+        margin-left: 1%;
+    }
+    .copa-highlights .section-title{
+        font-size: 30px;
+        margin-bottom: 29px;
+    }
+    
+    .copa-highlights .copa-highlights-info .info{
+        margin-bottom: 24px;
+        width: 329px;
+    }
+    
+    .copa-highlights-banner img{
+        width: 328px;
+        height: 248px;
+        margin-top: 29px;
+    }
+
+
+
+
+
+     /* Footer */
+     footer{
+        margin-top: 43px;
+    }
+    .foot-logo img{
+        width: 275px;
+    }
+    
+    .foot-icons{
+        font-size: 32px;
+    }
+    
+    .copyright{
+        font-size: 18px;
+    }
+
+    
+}
